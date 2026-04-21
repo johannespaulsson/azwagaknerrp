@@ -43,8 +43,45 @@ def generate_footer():
 def main():
     data = load_data()
     os.makedirs('C:/lol/characters', exist_ok=True)
+    os.makedirs('C:/lol/chapters', exist_ok=True)
     
-    # Generate Character pages
+    # Generate Chapter pages
+    extracted_dir = 'C:/lol/extracted'
+    files = sorted([f for f in os.listdir(extracted_dir) if f.endswith('.txt')])
+    
+    chapter_list = []
+    for filename in files:
+        chapter_id = filename.replace('.txt', '').replace(' ', '_').replace('.', '')
+        chapter_title = filename.replace('.txt', '')
+        file_path = os.path.join(extracted_dir, filename)
+        
+        with open(file_path, 'r', encoding='utf-8') as f:
+            full_text = f.read()
+            
+        # Clean up the text for HTML (replace newlines with <br> or wrap in <p>)
+        html_text = full_text.replace('\n', '<br>')
+        
+        content = generate_header(chapter_title, is_subpage=True)
+        content += f"<h2>{chapter_title}</h2>"
+        content += f"<div class='wiki-entry' style='white-space: pre-wrap; font-family: sans-serif; background: rgba(0,0,0,0.8); padding: 20px;'>{full_text}</div>"
+        content += generate_footer()
+        
+        with open(f"C:/lol/chapters/{chapter_id}.html", 'w', encoding='utf-8') as f:
+            f.write(content)
+        
+        chapter_list.append({'id': chapter_id, 'title': chapter_title})
+
+    # Generate Chapters Index
+    content = generate_header("Kapitel")
+    content += "<h2>Krönikorna</h2>"
+    content += "<p>Här kan du läsa alla kapitel i sin helhet, från kebabens begynnelse till marmeladens återkomst.</p>"
+    for chap in chapter_list:
+        content += f"<div class='character-card'><h3><a href='chapters/{chap['id']}.html'>{chap['title']}</a></h3></div>"
+    content += generate_footer()
+    with open("C:/lol/chapters.html", 'w', encoding='utf-8') as f:
+        f.write(content)
+    
+    # Generate Character pages (rest of code follows)
     for char in data['characters']:
         content = generate_header(char['name'], is_subpage=True)
         content += f"<h2>{char['name']}</h2>"
