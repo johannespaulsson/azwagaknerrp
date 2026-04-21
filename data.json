@@ -1,0 +1,145 @@
+{
+  "characters": [
+    {
+      "id": "hans_poker",
+      "name": "Hans-Poker Magdalenasson",
+      "aliases": ["Köttmakaren"],
+      "type": "major",
+      "description": "En herde från Kebabylonien som efter 45 år av getskötsel blev den utvalde att sprida kebaben. Hans hud är kebabartad och han svettas lila kebabsås.",
+      "analysis": "Hans-Poker representerar den ofrivillige profeten i ett surrealistiskt kosmos. Hans förvandling från en simpel getskötare till en varelse av rent kött och sås är central för berättelsens mytologi. I kapitel 13 kämpar han med tidvattnet av kebabsås som stiger när getterna bräker i moll.",
+      "traits": ["Kebabartad hud", "Svettas lila sås", "Har en getstav i höger gripklo"],
+      "associations": ["Gud", "Luguber", "Sopprot"]
+    },
+    {
+      "id": "luguber",
+      "name": "Luguber",
+      "aliases": ["Katten Luguber"],
+      "type": "major",
+      "description": "Hans-Pokers trogna vallkatt. Röker filterlöst och övar på att bli operasångare.",
+      "analysis": "I kapitel 13 ser vi Luguber ta nästa steg i sin musikaliska karriär genom att öva höga C med hjälp av en kråka vid namn Berit. Hans förmåga att förvandla mjölk till asbest med blicken bekräftar hans status som en varelse med kosmiska krafter.",
+      "traits": ["Röker filterlöst", "Använder sandpapper grovlek 40", "Kan imitera motorsågar"],
+      "associations": ["Hans-Poker", "Berit (kråka)", "Ainbusk Singers"]
+    },
+    {
+      "id": "stig_cindy",
+      "name": "Stig-Cindy Bakplåtspapper",
+      "aliases": ["Stickan", "Kommissarien"],
+      "type": "major",
+      "description": "En poliskommissarie med extremt okonventionella metoder och en sju meter lång igelkott som husdjur.",
+      "analysis": "Stig-Cindy personifierar lagens absurditet i Undulatköping. I kapitel 13 paddlar hon i en lådbil på sitt skrivbord och förhör en brödrost.",
+      "traits": ["Äger en kanotformad lådbil", "Har tre barn", "Använder flakmoped i överljudsfart"],
+      "associations": ["Ralf-Egil", "Tetra (brödrost)"]
+    },
+    {
+      "id": "ralf_egil",
+      "name": "Ralf-Egil Simonsork",
+      "aliases": ["Assistenten"],
+      "type": "major",
+      "description": "Stig-Cindys underkonstapel och assitent. Ofta hungrig på fladdermöss eller människokött.",
+      "analysis": "Ralf-Egil hittade vittnet Tetra (en brödrost) och försöker navigera i Stig-Cindys alltmer kaotiska utredningar.",
+      "traits": ["Äter fladdermöss", "Putsar glasögon med påslakan", "Hittade vittnet Tetra"],
+      "associations": ["Stig-Cindy", "Tetra"]
+    },
+    {
+      "id": "igmer_pettersson",
+      "name": "Igmer Pettersson",
+      "aliases": ["Mäster Igmer", "Sektledaren"],
+      "type": "major",
+      "description": "Ledare för sekten Azwaga Knerrp. Har ett tre meter långt skägg där ugglor bor.",
+      "analysis": "I kapitel 13 gömmer han sig i dimension 4.5 på ICA och flätar in falukorv i skägget för att locka ugglor att agera som handskar.",
+      "traits": ["3 meter långt skägg", "Flätar falukorv i skägget", "Bor i dimension 4.5 på ICA"],
+      "associations": ["Azwaga Knerrp", "Stig-Fido Eckz"]
+    },
+    {
+      "id": "doktor_kebab",
+      "name": "Doktor Kebab",
+      "aliases": ["Doktor K"],
+      "type": "major",
+      "description": "En domedagsteoretiker med planer på att ta över världen med köttätande flugor.",
+      "analysis": "Doktor Kebab har nu en kikare av renkött och planerar att förena getstenarna med marmeladen i Ralf-Egils kranskärl.",
+      "traits": ["Föder upp köttätande flugor", "Kikare av renkött", "Har en domedags-whiteboard"],
+      "associations": ["Fänika", "Dag-Algot"]
+    },
+    {
+      "id": "tetra",
+      "name": "Tetra",
+      "aliases": ["Brödrosten"],
+      "type": "secondary",
+      "description": "En brödrost med monokel som är ett nyckelvittne i mordet på Sven-Erik.",
+      "traits": ["Bär monokel", "Besatt av uttermarmelad", "Drivs eventuellt av morfin"],
+      "associations": ["Ralf-Egil", "Stig-Cindy"]
+    },
+    {
+      "id": "glenn_enok",
+      "name": "Glenn-Enok",
+      "aliases": ["Överstecharkuterist"],
+      "type": "secondary",
+      "description": "Chief charcutier på Östermalm som kämpar med leveranser av bäverläppar i Gore-Tex.",
+      "traits": ["Slipar knivar mot trottoarkanten", "Sippar på kopparpasta", "Har en mamma vars öra han kliar med en kartbok"]
+    },
+    {
+      "id": "dag_algot",
+      "name": "Dag-Algot Ingefära",
+      "aliases": ["Dagg-Algebra"],
+      "type": "secondary",
+      "description": "Surrealistisk skulptör som skapar statyer av grå massa och äter taggtråd.",
+      "traits": ["Äger en lemursvarv", "Använder vinkelslip på hundskulpturer", "Bor med en fjättrad brevbärare"]
+    },
+    {
+      "id": "kjell_brunte",
+      "name": "Kjell-Brunte Sauronsson",
+      "aliases": ["Rättsläkaren"],
+      "type": "secondary",
+      "description": "En rättsläkare som bär grodmansdräkt och arbetar med 'Rättsläkarnas Gemensamma Kompost'.",
+      "traits": ["Bär laxspett", "Iklädd dykarkostym", "Har en uggla på handen"]
+    },
+    {
+      "id": "sven_erik",
+      "name": "Sven-Erik Sverkersson",
+      "aliases": ["Finansmannen"],
+      "type": "secondary",
+      "description": "Mordoffer mördad med ett lysrör. Hans kropp förvandlades till en deg av smörgåsgurka.",
+      "traits": ["Abnorma ögonbryn av blåvit soda", "Mördad i Börshusets entré"]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Kebabylon",
+      "description": "Världens centrum 632 f. Kr. där allt började."
+    },
+    {
+      "name": "Undulatköping",
+      "description": "Huvudort för nutida händelser och Azwaga Knerrps högkvarter."
+    },
+    {
+      "name": "ICA (Dimension 4.5)",
+      "description": "En dimension inklämd mellan brödhyllan och frysdisken där Igmer Pettersson gömmer sig."
+    },
+    {
+      "name": "Rättsläkarnas Gemensamma Kompost",
+      "description": "Platsen där Kjell-Brunte förvarar lik och bevis bland julpynt och maskrosor."
+    },
+    {
+      "name": "Konditori Geten",
+      "description": "Mötesplats med strikta budord om ankskägg och hålfotsinlägg."
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "De tio getstenarna",
+      "description": "Heliga stenar. Sten nummer sju glöder nu i färgen 'härsken senap'."
+    },
+    {
+      "name": "Vinkelslipen från Koreakriget",
+      "description": "Återfunnen av Stig-Cindy i kapitel 13."
+    },
+    {
+      "name": "Kikaren av renkött",
+      "description": "Doktor Kebabs främsta spaningsverktyg."
+    },
+    {
+      "name": "Bäverläpp i Gore-Tex",
+      "description": "En lyxig charkuterivara eftertraktad på Östermalm."
+    }
+  ]
+}
