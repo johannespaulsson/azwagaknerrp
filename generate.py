@@ -100,6 +100,24 @@ def main():
                 content += f"<li>{trait}</li>"
             content += "</ul>"
             
+        if char.get('family'):
+            content += "<h3>Familj</h3><ul>"
+            for member in char['family']:
+                content += f"<li>{member}</li>"
+            content += "</ul>"
+            
+        if char.get('possessions'):
+            content += "<h3>Utrustning & Ägodelar</h3><ul>"
+            for item in char['possessions']:
+                content += f"<li>{item}</li>"
+            content += "</ul>"
+            
+        if char.get('quotes'):
+            content += "<h3>Kända Citat</h3><ul>"
+            for quote in char['quotes']:
+                content += f"<li><em>\"{quote}\"</em></li>"
+            content += "</ul>"
+            
         if char.get('appearances'):
             content += "<h3>Förekommer i kapitel</h3><ul>"
             for app in char['appearances']:
