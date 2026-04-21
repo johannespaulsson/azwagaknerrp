@@ -175,6 +175,10 @@
     {
       "name": "Konditori Geten",
       "description": "Mötesplats med strikta budord om ankskägg och hålfotsinlägg."
+    },
+    {
+      "name": "Bergens kran",
+      "description": "En mystisk vattenkälla eller mekanisk konstruktion som strömmar vatten ner till getterna. Utsattes nyligen för en jordbävning."
     }
   ],
   "artifacts": [
