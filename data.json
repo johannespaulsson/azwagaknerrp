@@ -3,272 +3,156 @@
     {
       "id": "hans_poker",
       "name": "Hans-Poker Magdalenasson",
-      "aliases": [
-        "Köttmakaren"
-      ],
+      "aliases": ["Köttmakaren"],
       "type": "major",
       "description": "En herde från Kebabylonien som efter 45 år av getskötsel blev den utvalde att sprida kebaben. Hans hud är kebabartad och han svettas lila kebabsås.",
       "analysis": "Hans-Poker representerar den ofrivillige profeten i ett surrealistiskt kosmos. Hans förvandling från en simpel getskötare till en varelse av rent kött och sås är central för berättelsens mytologi. I kapitel 13 kämpar han med tidvattnet av kebabsås som stiger när getterna bräker i moll.",
-      "traits": [
-        "Kebabartad hud",
-        "Svettas lila sås",
-        "Har en getstav i höger gripklo"
-      ],
-      "associations": [
-        "Gud",
-        "Luguber",
-        "Sopprot"
-      ],
-      "appearances": [
-        "Kap 0. Köttmakaren så började det",
-        "Kap 1. Köttmakaren på östermalm",
-        "Kapitel 12 eller mer - Hörvlande lungor och käkens likritade oas"
-      ]
+      "traits": ["Kebabartad hud", "Svettas lila sås", "Har en getstav i höger gripklo"],
+      "associations": ["Gud", "Luguber", "Sopprot"]
     },
     {
       "id": "luguber",
       "name": "Luguber",
-      "aliases": [
-        "Katten Luguber"
-      ],
+      "aliases": ["Katten Luguber"],
       "type": "major",
       "description": "Hans-Pokers trogna vallkatt. Röker filterlöst och övar på att bli operasångare.",
       "analysis": "I kapitel 13 ser vi Luguber ta nästa steg i sin musikaliska karriär genom att öva höga C med hjälp av en kråka vid namn Berit. Hans förmåga att förvandla mjölk till asbest med blicken bekräftar hans status som en varelse med kosmiska krafter.",
-      "traits": [
-        "Röker filterlöst",
-        "Använder sandpapper grovlek 40",
-        "Kan imitera motorsågar"
-      ],
-      "associations": [
-        "Hans-Poker",
-        "Berit (kråka)",
-        "Ainbusk Singers"
-      ],
-      "appearances": [
-        "Kap 0. Köttmakaren så började det",
-        "Kap 1. Köttmakaren på östermalm"
-      ]
+      "traits": ["Röker filterlöst", "Använder sandpapper grovlek 40", "Kan imitera motorsågar"],
+      "associations": ["Hans-Poker", "Berit (kråka)", "Ainbusk Singers"]
     },
     {
       "id": "stig_cindy",
       "name": "Stig-Cindy Bakplåtspapper",
-      "aliases": [
-        "Stickan",
-        "Kommissarien"
-      ],
+      "aliases": ["Stickan", "Kommissarien", "Överstegeneral"],
       "type": "major",
-      "description": "En poliskommissarie med extremt okonventionella metoder och en sju meter lång igelkott som husdjur.",
-      "analysis": "Stig-Cindy personifierar lagens absurditet i Undulatköping. I kapitel 13 paddlar hon i en lådbil på sitt skrivbord och förhör en brödrost.",
+      "description": "En poliskommissarie vars auktoritet endast överträffas av hennes surrealistiska anatomi och okonventionella arbetsmetoder.",
+      "analysis": "Stig-Cindy är navet i Undulatköpings rättsväsende. Hon är en kvinna av handling, ofta sedd kravlande i kloaker eller dykande i brunnar efter bevis (som shotsglas eller sopsäckar med cider). Hennes kropp är en portal för det absurda; hon har fött fram en sju meter lång igelkott ur bäckenbenet och har ibland en giraff med slips i näsan. Trots (eller på grund av) sina titanbeklädda baktänder och björnfötter till ögonbryn, upprätthåller hon en järnhård disciplin över sin assistent Ralf-Egil. Hennes ledarstil involverar ofta morfin, varningsskott och en kanotformad lådbil som hon använder för att navigera både polishusets korridorer och stadens gator i överljudsfart.",
       "traits": [
-        "Äger en kanotformad lådbil",
-        "Har tre barn",
-        "Använder flakmoped i överljudsfart"
+        "Titanbeklädda baktänder",
+        "Björnfötter till ögonbryn",
+        "Äger en kanotformad lådbil och en flakmoped i överljudsfart",
+        "Har fött en 7 meter lång igelkott ur bäckenbenet",
+        "Andedräkt av grillad gnu och kisel",
+        "Stövlar som kan förvandlas till frysta ärtor",
+        "Bär ibland en giraff med slips i ena näsborren"
       ],
-      "associations": [
-        "Ralf-Egil",
-        "Tetra (brödrost)"
+      "family": [
+        "Barn: Mats-Albert, Hyundai-Aertu, Gun-Efva 36",
+        "Farfar: Pizzabagare och fotvårdsspecialist"
       ],
-      "appearances": [
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 10 Kardanens mun och mynning",
-        "Kap 11 Ljumskchock i brevlådan",
-        "Kap 2. Paraplydrinkarnas sjungande gudinna",
-        "Kap 3. Valar är svårfångade och hala kreatur",
-        "Kap 4. Apborttagningsmedlet",
-        "Kap 6. Läkarkonsten är en obegriplig dynamisk råvara",
-        "Kap 7-1. Tofuspalje",
-        "Kap 8. Med kalvspad i beredskap",
-        "Kap 9. Hemskheter i latex nalkas"
-      ]
-    },
-    {
-      "id": "ralf_egil",
-      "name": "Ralf-Egil Simonsork",
-      "aliases": [
-        "Assistenten"
+      "possessions": [
+        "Machete (för djungelrummet)",
+        "Skrin märkt 'morfin - vänligen rör ej'",
+        "Palestinasjal av märket Torkel Kork",
+        "Bergsklättrarkeps",
+        "Trädgårdsspade (för obduktioner)"
       ],
-      "type": "major",
-      "description": "Stig-Cindys underkonstapel och assitent. Ofta hungrig på fladdermöss eller människokött.",
-      "analysis": "Ralf-Egil hittade vittnet Tetra (en brödrost) och försöker navigera i Stig-Cindys alltmer kaotiska utredningar.",
-      "traits": [
-        "Äter fladdermöss",
-        "Putsar glasögon med påslakan",
-        "Hittade vittnet Tetra"
-      ],
-      "associations": [
-        "Stig-Cindy",
-        "Tetra"
-      ],
-      "appearances": [
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 10 Kardanens mun och mynning",
-        "Kap 11 Ljumskchock i brevlådan",
-        "Kap 2. Paraplydrinkarnas sjungande gudinna",
-        "Kap 3. Valar är svårfångade och hala kreatur",
-        "Kap 4. Apborttagningsmedlet",
-        "Kap 6. Läkarkonsten är en obegriplig dynamisk råvara",
-        "Kap 7-1. Tofuspalje",
-        "Kap 8. Med kalvspad i beredskap",
-        "Kap 9. Hemskheter i latex nalkas"
+      "associations": ["Ralf-Egil", "Kjell-Brunte", "Tetra (vittne)", "Slaktare Bengtsson"],
+      "quotes": [
+        "Jag har salamin!",
+        "Duger detta som bäverläpp så länge??",
+        "Har du fyllt i den där enkäten jag postade dig förresten? Den om getternas matvanor?",
+        "Ta hit en skärbrännare!!"
       ]
     },
     {
       "id": "igmer_pettersson",
       "name": "Igmer Pettersson",
-      "aliases": [
-        "Mäster Igmer",
-        "Sektledaren"
-      ],
+      "aliases": ["Mäster Igmer", "Sektledaren", "Andlig mentor"],
       "type": "major",
-      "description": "Ledare för sekten Azwaga Knerrp. Har ett tre meter långt skägg där ugglor bor.",
-      "analysis": "I kapitel 13 gömmer han sig i dimension 4.5 på ICA och flätar in falukorv i skägget för att locka ugglor att agera som handskar.",
+      "description": "Ledare för sekten Azwaga Knerrp, känd för sin 'magnitud' och sitt tre meter långa skägg.",
+      "analysis": "Igmer Pettersson är en andlig auktoritet som opererar i gränslandet mellan religiös fanatism och absurd hushållsekonomi. Han styr sin sekt från ett plåtskjul och lever efter den babyloniska kalendern, vilket leder till att han arrangerar lussefika för igelkottar mitt i maj. Hans skägg är inte bara en prydnad utan ett fungerande ekosystem där både ugglor och hans 'bitch' gråsparven Klas bor. Han är en veteran från elfenbenskriget och har en unik förmåga att kommunicera med brevugglor via sork-betalning. I kapitel 13 använder han sin strategiska briljans genom att fläta falukorv i skägget för att maskera sina ugglor som fackanslutna handskar inför en eventuell polisinvasion.",
       "traits": [
-        "3 meter långt skägg",
-        "Flätar falukorv i skägget",
-        "Bor i dimension 4.5 på ICA"
+        "Tre meter långt skägg som hyser ugglor och gråsparvar",
+        "Korvfingrar",
+        "Bär vit särk/kaftan och mössa på sned",
+        "Följer babylonisk kalender (5 dagar/vecka, 5 veckor/månad)",
+        "Äger ett blommigt förkläde för rituell lussefika"
+      ],
+      "family": [
+        "Hustru/Bitch: Gråsparven Klas (bor i skägget)"
+      ],
+      "possessions": [
+        "Sektpipa (blåses i under seanser)",
+        "Kopparpläterad skäggkam",
+        "Heliga skåpet (fyllt med blåbärsmuffins och stentavlor)",
+        "Kontrollbord med LED-lampor (där endast knappen till uthuset fungerar)",
+        "Offerstenen (scen för getoffringen -97)",
+        "Brevugglan 'Dunbollen' (kräver sorkar som porto)"
       ],
       "associations": [
-        "Azwaga Knerrp",
-        "Stig-Fido Eckz"
+        "Stig-Fido Eckz (Underpräst)",
+        "Åke (Medium)",
+        "Engelbrekt-Jussuf Tobakson (Postorder-medlem)",
+        "Glenn-Enok (Lokal glögg-leverantör)"
       ],
-      "appearances": [
-        "Kap 0. Köttmakaren så började det",
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 2. Paraplydrinkarnas sjungande gudinna",
-        "Kap 3. Valar är svårfångade och hala kreatur",
-        "Kap 4. Apborttagningsmedlet",
-        "Kap 7-1. Tofuspalje",
-        "Kap 9. Hemskheter i latex nalkas",
-        "Kapitel 12 eller mer - Hörvlande lungor och käkens likritade oas"
+      "quotes": [
+        "Här borta ligger en man och ylar i låtsade plågor, men ta det lugnt... Det är Åke, vårt medium.",
+        "Har du sett min kaskelott?",
+        "Om polisen kommer, så låtsas ni att ni är handskar!",
+        "Här hade vi vår heliga sten, fast nu är den stulen, men vi fick en ny på posten."
       ]
+    },
+    {
+      "id": "ralf_egil",
+      "name": "Ralf-Egil Simonsork",
+      "aliases": ["Assistenten"],
+      "type": "major",
+      "description": "Stig-Cindys underkonstapel och assitent. Ofta hungrig på fladdermöss eller människokött.",
+      "analysis": "Ralf-Egil hittade vittnet Tetra (en brödrost) och försöker navigera i Stig-Cindys alltmer kaotiska utredningar.",
+      "traits": ["Äter fladdermöss", "Putsar glasögon med påslakan", "Hittade vittnet Tetra"],
+      "associations": ["Stig-Cindy", "Tetra"]
     },
     {
       "id": "doktor_kebab",
       "name": "Doktor Kebab",
-      "aliases": [
-        "Doktor K"
-      ],
+      "aliases": ["Doktor K"],
       "type": "major",
       "description": "En domedagsteoretiker med planer på att ta över världen med köttätande flugor.",
       "analysis": "Doktor Kebab har nu en kikare av renkött och planerar att förena getstenarna med marmeladen i Ralf-Egils kranskärl.",
-      "traits": [
-        "Föder upp köttätande flugor",
-        "Kikare av renkött",
-        "Har en domedags-whiteboard"
-      ],
-      "associations": [
-        "Fänika",
-        "Dag-Algot"
-      ],
-      "appearances": [
-        "Kap 11 Ljumskchock i brevlådan",
-        "Kap 2. Paraplydrinkarnas sjungande gudinna",
-        "Kap 3. Valar är svårfångade och hala kreatur",
-        "Kapitel 12 eller mer - Hörvlande lungor och käkens likritade oas"
-      ]
+      "traits": ["Föder upp köttätande flugor", "Kikare av renkött", "Har en domedags-whiteboard"],
+      "associations": ["Fänika", "Dag-Algot"]
     },
     {
       "id": "tetra",
       "name": "Tetra",
-      "aliases": [
-        "Brödrosten"
-      ],
+      "aliases": ["Brödrosten"],
       "type": "secondary",
       "description": "En brödrost med monokel som är ett nyckelvittne i mordet på Sven-Erik.",
-      "traits": [
-        "Bär monokel",
-        "Besatt av uttermarmelad",
-        "Drivs eventuellt av morfin"
-      ],
-      "associations": [
-        "Ralf-Egil",
-        "Stig-Cindy"
-      ],
-      "appearances": [
-        "Kap 2. Paraplydrinkarnas sjungande gudinna",
-        "Kap 3. Valar är svårfångade och hala kreatur"
-      ]
+      "traits": ["Bär monokel", "Besatt av uttermarmelad", "Drivs eventuellt av morfin"],
+      "associations": ["Ralf-Egil", "Stig-Cindy"]
     },
     {
       "id": "glenn_enok",
       "name": "Glenn-Enok",
-      "aliases": [
-        "Överstecharkuterist"
-      ],
+      "aliases": ["Överstecharkuterist"],
       "type": "secondary",
       "description": "Chief charcutier på Östermalm som kämpar med leveranser av bäverläppar i Gore-Tex.",
-      "traits": [
-        "Slipar knivar mot trottoarkanten",
-        "Sippar på kopparpasta",
-        "Har en mamma vars öra han kliar med en kartbok"
-      ],
-      "appearances": [
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 4. Apborttagningsmedlet",
-        "Kap 6. Läkarkonsten är en obegriplig dynamisk råvara",
-        "Kap 9. Hemskheter i latex nalkas"
-      ]
+      "traits": ["Slipar knivar mot trottoarkanten", "Sippar på kopparpasta", "Har en mamma vars öra han kliar med en kartbok"]
     },
     {
       "id": "dag_algot",
       "name": "Dag-Algot Ingefära",
-      "aliases": [
-        "Dagg-Algebra"
-      ],
+      "aliases": ["Dagg-Algebra"],
       "type": "secondary",
       "description": "Surrealistisk skulptör som skapar statyer av grå massa och äter taggtråd.",
-      "traits": [
-        "Äger en lemursvarv",
-        "Använder vinkelslip på hundskulpturer",
-        "Bor med en fjättrad brevbärare"
-      ],
-      "appearances": [
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 10 Kardanens mun och mynning",
-        "Kap 11 Ljumskchock i brevlådan",
-        "Kap 2. Paraplydrinkarnas sjungande gudinna",
-        "Kap 6. Läkarkonsten är en obegriplig dynamisk råvara",
-        "Kap 8. Med kalvspad i beredskap",
-        "Kap 9. Hemskheter i latex nalkas"
-      ]
+      "traits": ["Äger en lemursvarv", "Använder vinkelslip på hundskulpturer", "Bor med en fjättrad brevbärare"]
     },
     {
       "id": "kjell_brunte",
       "name": "Kjell-Brunte Sauronsson",
-      "aliases": [
-        "Rättsläkaren"
-      ],
+      "aliases": ["Rättsläkaren"],
       "type": "secondary",
       "description": "En rättsläkare som bär grodmansdräkt och arbetar med 'Rättsläkarnas Gemensamma Kompost'.",
-      "traits": [
-        "Bär laxspett",
-        "Iklädd dykarkostym",
-        "Har en uggla på handen"
-      ],
-      "appearances": [
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 3. Valar är svårfångade och hala kreatur"
-      ]
+      "traits": ["Bär laxspett", "Iklädd dykarkostym", "Har en uggla på handen"]
     },
     {
       "id": "sven_erik",
       "name": "Sven-Erik Sverkersson",
-      "aliases": [
-        "Finansmannen"
-      ],
+      "aliases": ["Finansmannen"],
       "type": "secondary",
       "description": "Mordoffer mördad med ett lysrör. Hans kropp förvandlades till en deg av smörgåsgurka.",
-      "traits": [
-        "Abnorma ögonbryn av blåvit soda",
-        "Mördad i Börshusets entré"
-      ],
-      "appearances": [
-        "Kap 1. Köttmakaren på östermalm",
-        "Kap 3. Valar är svårfångade och hala kreatur",
-        "Kap 4. Apborttagningsmedlet",
-        "Kap 7-1. Tofuspalje",
-        "Kap 8. Med kalvspad i beredskap"
-      ]
+      "traits": ["Abnorma ögonbryn av blåvit soda", "Mördad i Börshusets entré"]
     }
   ],
   "locations": [
