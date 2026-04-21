@@ -12,6 +12,7 @@ def generate_header(title, is_subpage=False):
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title} - Kebabylon Wiki</title>
     <link rel="stylesheet" href="{prefix}style.css">
 </head>
