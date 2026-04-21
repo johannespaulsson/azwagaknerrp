@@ -1,6 +1,7 @@
+/* Retro 8-bit Readability Theme */
 body {
-    background-color: #2e0854; /* Kebab sauce purple */
-    color: #e0d0b0; /* Old paper / Hummus beige */
+    background-color: #1a1a1a; /* Soft dark background */
+    color: #e0e0e0; /* Off-white for readability */
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     margin: 0;
@@ -8,75 +9,106 @@ body {
 }
 
 header {
-    background-color: #4b0082;
+    background-color: #333;
     padding: 20px;
     text-align: center;
-    border-bottom: 5px solid #ff4500;
+    border-bottom: 4px solid #ffcc00; /* Retro yellow accent */
 }
 
 nav {
-    background-color: #1a052d;
+    background-color: #222;
     padding: 10px;
     text-align: center;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid #444;
 }
 
 nav a {
-    color: #ff4500;
+    color: #ffcc00;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 0.9em;
 }
 
 nav a:hover {
     color: #fff;
-    text-shadow: 0 0 5px #ff4500;
+    background-color: #444;
+    outline: 2px solid #ffcc00;
 }
 
 main {
-    max-width: 900px;
+    max-width: 850px;
     margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 2px solid #4b0082;
-    box-shadow: 10px 10px 0px #ff4500;
+    padding: 30px;
+    background-color: #262626; /* Slightly lighter surface */
+    border: 4px solid #444;
+    box-shadow: 8px 8px 0px #000; /* Chunky 8-bit shadow */
 }
 
 h1, h2, h3 {
-    color: #ff4500;
+    color: #ffcc00;
     text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a {
+    color: #00ccff; /* Retro cyan links */
+}
+
+a:hover {
+    color: #ff00ff; /* Magenta hover */
 }
 
 .wiki-entry {
     margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #e0d0b0;
+    padding: 15px;
+    background-color: #1e1e1e;
+    border-left: 4px solid #ffcc00;
 }
 
 .character-card {
-    border: 1px solid #ff4500;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #3b0a6b;
+    border: 2px solid #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #2d2d2d;
+    transition: transform 0.1s;
+}
+
+.character-card:hover {
+    border-color: #ffcc00;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px #000;
+}
+
+/* Specific styling for full chapter text */
+.chapter-text {
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    color: #dcdcdc;
+    background-color: #121212;
+    padding: 25px;
+    border: 2px solid #333;
+    line-height: 1.8;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     font-size: 0.8em;
-    color: #888;
+    color: #666;
+    text-transform: uppercase;
 }
 
-/* Surrealist touches */
-.glitch {
-    position: relative;
-    display: inline-block;
-}
-
-.goat-icon {
-    float: right;
-    width: 50px;
-    opacity: 0.5;
+/* 8-bit Pixel Border Effect */
+.pixel-border {
+    border: 4px solid #000;
+    box-shadow: 
+        0 -4px 0 0 #000,
+        0 4px 0 0 #000,
+        -4px 0 0 0 #000,
+        4px 0 0 0 #000;
 }

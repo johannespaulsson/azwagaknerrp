@@ -63,7 +63,7 @@ def main():
         
         content = generate_header(chapter_title, is_subpage=True)
         content += f"<h2>{chapter_title}</h2>"
-        content += f"<div class='wiki-entry' style='white-space: pre-wrap; font-family: sans-serif; background: rgba(0,0,0,0.8); padding: 20px;'>{full_text}</div>"
+        content += f"<div class='chapter-text'>{full_text}</div>"
         content += generate_footer()
         
         with open(f"C:/lol/chapters/{chapter_id}.html", 'w', encoding='utf-8') as f:
