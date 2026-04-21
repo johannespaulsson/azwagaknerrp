@@ -2,6 +2,7 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kebabylon Wiki - Hem</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,9 +17,19 @@
         <a href="characters.html">Karaktärer</a>
         <a href="locations.html">Platser</a>
         <a href="artifacts.html">Artefakter</a>
+        <a href="kontakt.html">Kontakt</a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Sök i arkivet...">
+            <div id="search-results"></div>
+        </div>
     </nav>
     <main>
         <h2>Välkommen till Sanningen</h2>
+        <div class="wiki-entry" style="border: 2px solid #ffcc00; background: #333; padding: 20px; margin-bottom: 30px;">
+            <h3 style="margin-top: 0;">Dagens Budord från Konditori Geten:</h3>
+            <p id="daily-budord" style="font-style: italic; font-size: 1.2em; color: #ffcc00;">Laddar visdomar...</p>
+        </div>
+
         <p>Du har trätt in i en värld där getter är profeter, kebaben är gudomlig och logik är något man tvättar bort med blåbärsjuice. Denna wiki sammanställer de fragmenterade vittnesmålen från <strong>Köttmakaren Hans-Poker Magdalenasson</strong> och de som korsat hans väg genom tiderna.</p>
         
         <div class="wiki-entry">
@@ -35,8 +46,19 @@
             </ul>
         </div>
     </main>
-    <footer>
-        &copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House</p>
+        <p><a href="gdpr.html" style="font-size: 0.7em; color: #555;">GDPR-Policy (Getternas Dataskydds- & Prygel-Regler)</a></p>
     </footer>
+    <script src="search_data.js"></script>
+    <script src="search.js"></script>
+    <script>
+        fetch('budord.json')
+            .then(response => response.json())
+            .then(data => {
+                const budord = data[Math.floor(Math.random() * data.length)];
+                document.getElementById('daily-budord').innerText = budord;
+            });
+    </script>
 </body>
 </html>

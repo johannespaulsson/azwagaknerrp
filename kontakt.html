@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Kebabylon Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kebabylonien & Köttmakarens Krönikor</h1>
+        <p>Den officiella encyklopedin över getter, kebabsås och kosmiskt kaos</p>
+    </header>
+    <nav>
+        <a href="index.html">Hem</a>
+        <a href="chapters.html">Kapitel</a>
+        <a href="characters.html">Karaktärer</a>
+        <a href="locations.html">Platser</a>
+        <a href="artifacts.html">Artefakter</a>
+        <a href="kontakt.html">Kontakt</a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Sök i arkivet...">
+            <div id="search-results"></div>
+        </div>
+    </nav>
+    <main>
+        <h2>Kontakta Sekten (Azwaga Knerrp)</h2>
+        <div class="wiki-entry">
+            <p>Har du hittat en helig sten? Eller har din assistent börjat svettas lila sås? Kontakta oss via våra officiella kanaler.</p>
+            <ul>
+                <li><strong>Adress:</strong> Plåtskjulet bakom ICA, Dimension 4.5 (Vänligen knacka tre gånger på frysdisken).</li>
+                <li><strong>Brevduva/Uggla:</strong> Adresseras till "Dunbollen". Betalning sker i sork eller blåbärsmuffins.</li>
+                <li><strong>Telefon:</strong> 08-GET-KEBAB (Endast öppet under babylonisk fullmåne).</li>
+                <li><strong>E-post:</strong> <a href="mailto:ugglan.dunbollen@azwagaknerrp.get">ugglan.dunbollen@azwagaknerrp.get</a></li>
+            </ul>
+        </div>
+
+        <div class="character-card">
+            <h3>Skicka ett meddelande</h3>
+            <form onsubmit="alert('Sorken har skickats! Vi svarar så fort Igmer har kammat skägget.'); return false;">
+                <p><input type="text" placeholder="Ditt namn (eller get-ID)" style="width: 100%; background: #000; color: #ffcc00; border: 1px solid #444; padding: 10px;"></p>
+                <p><textarea placeholder="Ditt meddelande till Mäster Igmer..." style="width: 100%; height: 100px; background: #000; color: #ffcc00; border: 1px solid #444; padding: 10px;"></textarea></p>
+                <p><button type="submit" style="background: #ffcc00; color: #000; border: none; padding: 10px 20px; font-family: 'Courier New'; font-weight: bold; cursor: pointer;">SKICKA SORK</button></p>
+            </form>
+        </div>
+    </main>
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House</p>
+        <p><a href="gdpr.html" style="font-size: 0.7em; color: #555;">GDPR-Policy (Getternas Dataskydds- & Prygel-Regler)</a></p>
+    </footer>
+    <script src="search_data.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

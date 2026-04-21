@@ -1,8 +1,13 @@
 import json
 import os
+import random
 
 def load_data():
     with open('C:/lol/data.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def load_budord():
+    with open('C:/lol/budord.json', 'r', encoding='utf-8') as f:
         return json.load(f)
 
 def generate_header(title, is_subpage=False):
@@ -27,6 +32,7 @@ def generate_header(title, is_subpage=False):
         <a href="{prefix}characters.html">Karaktärer</a>
         <a href="{prefix}locations.html">Platser</a>
         <a href="{prefix}artifacts.html">Artefakter</a>
+        <a href="{prefix}kontakt.html">Kontakt</a>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Sök i arkivet...">
             <div id="search-results"></div>
@@ -39,17 +45,31 @@ def generate_footer(is_subpage=False):
     prefix = '../' if is_subpage else ''
     return f"""
     </main>
-    <footer>
-        &copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House</p>
+        <p><a href="{prefix}gdpr.html" style="font-size: 0.7em; color: #555;">GDPR-Policy (Getternas Dataskydds- & Prygel-Regler)</a></p>
     </footer>
     <script src="{prefix}search_data.js"></script>
     <script src="{prefix}search.js"></script>
+    <script>
+        // Budget "Daily Quote" logic for the index page only
+        if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {{
+            fetch('{prefix}budord.json')
+                .then(response => response.json())
+                .then(data => {{
+                    const budord = data[Math.floor(Math.random() * data.length)];
+                    const container = document.getElementById('daily-budord');
+                    if (container) container.innerText = budord;
+                }});
+        }}
+    </script>
 </body>
 </html>
 """
 
 def main():
     data = load_data()
+    budord_list = load_budord()
     os.makedirs('C:/lol/characters', exist_ok=True)
     os.makedirs('C:/lol/chapters', exist_ok=True)
     
