@@ -219,9 +219,27 @@ def main():
     with open("C:/lol/locations.html", 'w', encoding='utf-8') as f:
         f.write(content)
 
+    # Add main pages to search
+    main_pages = [
+        ('Hem', 'index.html', 'Sida'),
+        ('Kapitel', 'chapters.html', 'Sida'),
+        ('Karaktärer', 'characters.html', 'Sida'),
+        ('Platser', 'locations.html', 'Sida'),
+        ('Artefakter', 'artifacts.html', 'Sida'),
+        ('Kontakt', 'kontakt.html', 'Sida'),
+        ('GDPR-Policy', 'gdpr.html', 'Sida'),
+    ]
+    for title, url, ptype in main_pages:
+        search_entries.append({
+            'title': title,
+            'url': url,
+            'type': ptype,
+            'tags': []
+        })
+
     # Save search data
-    with open("C:/lol/search_data.js", 'w', encoding='utf-8') as f:
-        f.write(f"const searchData = {json.dumps(search_entries, ensure_ascii=False)};")
+    with open("C:/lol/search_data.js", "w", encoding="utf-8") as f:
+        f.write(f"var searchData = {json.dumps(search_entries, ensure_ascii=False)};")
 
 if __name__ == "__main__":
     main()

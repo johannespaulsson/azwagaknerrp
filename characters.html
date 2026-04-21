@@ -18,6 +18,7 @@
         <a href="characters.html">Karaktärer</a>
         <a href="locations.html">Platser</a>
         <a href="artifacts.html">Artefakter</a>
+        <a href="kontakt.html">Kontakt</a>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Sök i arkivet...">
             <div id="search-results"></div>
@@ -26,10 +27,23 @@
     <main>
 <h2>Persongalleri</h2><h3>Huvudkaraktärer</h3><div class='character-card'><h3><a href='characters/hans_poker.html'>Hans-Poker Magdalenasson</a></h3><p>En herde från Kebabylonien som efter 45 år av getskötsel blev den utvalde att sprida kebaben. Hans hud är kebabartad och han svettas lila kebabsås.</p></div><div class='character-card'><h3><a href='characters/luguber.html'>Luguber</a></h3><p>Hans-Pokers trogna vallkatt. Röker filterlöst och övar på att bli operasångare.</p></div><div class='character-card'><h3><a href='characters/stig_cindy.html'>Stig-Cindy Bakplåtspapper</a></h3><p>En poliskommissarie vars auktoritet endast överträffas av hennes surrealistiska anatomi och okonventionella arbetsmetoder.</p></div><div class='character-card'><h3><a href='characters/igmer_pettersson.html'>Igmer Pettersson</a></h3><p>Ledare för sekten Azwaga Knerrp, känd för sin 'magnitud' och sitt tre meter långa skägg.</p></div><div class='character-card'><h3><a href='characters/ralf_egil.html'>Ralf-Egil Simonsork</a></h3><p>Stig-Cindys underkonstapel och assitent. Ofta hungrig på fladdermöss eller människokött.</p></div><div class='character-card'><h3><a href='characters/doktor_kebab.html'>Doktor Kebab</a></h3><p>En domedagsteoretiker med planer på att ta över världen med köttätande flugor.</p></div><h3>Bifigurer</h3><div class='character-card'><h3><a href='characters/tetra.html'>Tetra</a></h3><p>En brödrost med monokel som är ett nyckelvittne i mordet på Sven-Erik.</p></div><div class='character-card'><h3><a href='characters/glenn_enok.html'>Glenn-Enok</a></h3><p>Chief charcutier på Östermalm som kämpar med leveranser av bäverläppar i Gore-Tex.</p></div><div class='character-card'><h3><a href='characters/dag_algot.html'>Dag-Algot Ingefära</a></h3><p>Surrealistisk skulptör som skapar statyer av grå massa och äter taggtråd.</p></div><div class='character-card'><h3><a href='characters/kjell_brunte.html'>Kjell-Brunte Sauronsson</a></h3><p>En rättsläkare som bär grodmansdräkt och arbetar med 'Rättsläkarnas Gemensamma Kompost'.</p></div><div class='character-card'><h3><a href='characters/sven_erik.html'>Sven-Erik Sverkersson</a></h3><p>Mordoffer mördad med ett lysrör. Hans kropp förvandlades till en deg av smörgåsgurka.</p></div>
     </main>
-    <footer>
-        &copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House</p>
+        <p><a href="gdpr.html" style="font-size: 0.7em; color: #555;">GDPR-Policy (Getternas Dataskydds- & Prygel-Regler)</a></p>
     </footer>
     <script src="search_data.js"></script>
     <script src="search.js"></script>
+    <script>
+        // Budget "Daily Quote" logic for the index page only
+        if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+            fetch('budord.json')
+                .then(response => response.json())
+                .then(data => {
+                    const budord = data[Math.floor(Math.random() * data.length)];
+                    const container = document.getElementById('daily-budord');
+                    if (container) container.innerText = budord;
+                });
+        }
+    </script>
 </body>
 </html>

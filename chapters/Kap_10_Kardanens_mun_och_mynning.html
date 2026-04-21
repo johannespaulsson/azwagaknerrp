@@ -18,6 +18,7 @@
         <a href="../characters.html">Karaktärer</a>
         <a href="../locations.html">Platser</a>
         <a href="../artifacts.html">Artefakter</a>
+        <a href="../kontakt.html">Kontakt</a>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Sök i arkivet...">
             <div id="search-results"></div>
@@ -42,10 +43,23 @@ Solen gassade över polisstationen. Det tidigare rektangulära huset hade börja
 "Det är just det jag inte vet, jag behöver få tag på dom där röntgenplåtarna, och kontrollera registreringsnummret mot trafikregistret". Korrekt? "Javisst, chefen", låt tunnan rulla och bävrarna stå i vasken. Gelén fryser när du står med öppen mun sådär. Gå ut i hallen och torka av dig. Förresten, vi har ett fullspäckat schema för dagen. Först ska du ge dig av till en hyresvärd i norra Plastkvarn och ta reda på vad han egentligen såg natten då Uagek mördades. Hans ex-fru bor nämligen i samma hus som vårt första mordoffer." "okej, det ska bli intressant hur jag ska ta mig ut ur polishuset först, eftersom alla fönster och dörrar verkar ha slutat existera". Med de orden lämnade Ralf-Egil rummet. Stig-Cindy smög bakom sitt skrivbord och öppnade sitt skrin med texten "morfin - vänligen rör ej". Mullvadskeps. 
 I apfabriken var produktionen i full gång. Två ton lakrits och tre ton kallpressad linolja skulle blandas till en puré, som aporna fick in på rummen i kristallglas. Exporten av orangutanghår var den mest lukrativa delen i fabriken, trots det fanns även pottor svarvade av späda lemurfingrar samt apleverpajstej till försäljning. </div>
     </main>
-    <footer>
-        &copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House</p>
+        <p><a href="../gdpr.html" style="font-size: 0.7em; color: #555;">GDPR-Policy (Getternas Dataskydds- & Prygel-Regler)</a></p>
     </footer>
     <script src="../search_data.js"></script>
     <script src="../search.js"></script>
+    <script>
+        // Budget "Daily Quote" logic for the index page only
+        if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+            fetch('../budord.json')
+                .then(response => response.json())
+                .then(data => {
+                    const budord = data[Math.floor(Math.random() * data.length)];
+                    const container = document.getElementById('daily-budord');
+                    if (container) container.innerText = budord;
+                });
+        }
+    </script>
 </body>
 </html>

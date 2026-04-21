@@ -18,6 +18,7 @@
         <a href="../characters.html">Karaktärer</a>
         <a href="../locations.html">Platser</a>
         <a href="../artifacts.html">Artefakter</a>
+        <a href="../kontakt.html">Kontakt</a>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Sök i arkivet...">
             <div id="search-results"></div>
@@ -291,10 +292,23 @@ Microsoft Office Word
 þÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ
 Microsoft Office Word 97-2003-dokument</div>
     </main>
-    <footer>
-        &copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House
+    <footer style="text-align: center; margin-top: 50px;">
+        <p>&copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House</p>
+        <p><a href="../gdpr.html" style="font-size: 0.7em; color: #555;">GDPR-Policy (Getternas Dataskydds- & Prygel-Regler)</a></p>
     </footer>
     <script src="../search_data.js"></script>
     <script src="../search.js"></script>
+    <script>
+        // Budget "Daily Quote" logic for the index page only
+        if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
+            fetch('../budord.json')
+                .then(response => response.json())
+                .then(data => {
+                    const budord = data[Math.floor(Math.random() * data.length)];
+                    const container = document.getElementById('daily-budord');
+                    if (container) container.innerText = budord;
+                });
+        }
+    </script>
 </body>
 </html>
