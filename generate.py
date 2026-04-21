@@ -27,16 +27,23 @@ def generate_header(title, is_subpage=False):
         <a href="{prefix}characters.html">Karaktärer</a>
         <a href="{prefix}locations.html">Platser</a>
         <a href="{prefix}artifacts.html">Artefakter</a>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Sök i arkivet...">
+            <div id="search-results"></div>
+        </div>
     </nav>
     <main>
 """
 
-def generate_footer():
-    return """
+def generate_footer(is_subpage=False):
+    prefix = '../' if is_subpage else ''
+    return f"""
     </main>
     <footer>
         &copy; 632 f. Kr. - 2026 Azwaga Knerrp Publishing House
     </footer>
+    <script src="{prefix}search_data.js"></script>
+    <script src="{prefix}search.js"></script>
 </body>
 </html>
 """
@@ -46,6 +53,8 @@ def main():
     os.makedirs('C:/lol/characters', exist_ok=True)
     os.makedirs('C:/lol/chapters', exist_ok=True)
     
+    search_entries = []
+
     # Generate Chapter pages
     extracted_dir = 'C:/lol/extracted'
     files = sorted([f for f in os.listdir(extracted_dir) if f.endswith('.txt')])
@@ -59,18 +68,21 @@ def main():
         with open(file_path, 'r', encoding='utf-8') as f:
             full_text = f.read()
             
-        # Clean up the text for HTML (replace newlines with <br> or wrap in <p>)
-        html_text = full_text.replace('\n', '<br>')
-        
         content = generate_header(chapter_title, is_subpage=True)
         content += f"<h2>{chapter_title}</h2>"
         content += f"<div class='chapter-text'>{full_text}</div>"
-        content += generate_footer()
+        content += generate_footer(is_subpage=True)
         
         with open(f"C:/lol/chapters/{chapter_id}.html", 'w', encoding='utf-8') as f:
             f.write(content)
         
         chapter_list.append({'id': chapter_id, 'title': chapter_title})
+        search_entries.append({
+            'title': chapter_title,
+            'url': f'chapters/{chapter_id}.html',
+            'type': 'Kapitel',
+            'tags': []
+        })
 
     # Generate Chapters Index
     content = generate_header("Kapitel")
@@ -82,7 +94,7 @@ def main():
     with open("C:/lol/chapters.html", 'w', encoding='utf-8') as f:
         f.write(content)
     
-    # Generate Character pages (rest of code follows)
+    # Generate Character pages
     for char in data['characters']:
         content = generate_header(char['name'], is_subpage=True)
         content += f"<h2>{char['name']}</h2>"
@@ -129,10 +141,17 @@ def main():
             content += ", ".join(char['associations'])
             content += "</p>"
             
-        content += generate_footer()
+        content += generate_footer(is_subpage=True)
         
         with open(f"C:/lol/characters/{char['id']}.html", 'w', encoding='utf-8') as f:
             f.write(content)
+            
+        search_entries.append({
+            'title': char['name'],
+            'url': f'characters/{char["id"]}.html',
+            'type': 'Karaktär',
+            'tags': char.get('aliases', []) + char.get('traits', [])
+        })
 
     # Generate Characters Index
     content = generate_header("Karaktärer")
@@ -155,6 +174,12 @@ def main():
     content += "<h2>Heliga Föremål & Brödrostar</h2>"
     for art in data['artifacts']:
         content += f"<div class='wiki-entry'><h3>{art['name']}</h3><p>{art['description']}</p></div>"
+        search_entries.append({
+            'title': art['name'],
+            'url': 'artifacts.html',
+            'type': 'Artefakt',
+            'tags': []
+        })
     content += generate_footer()
     with open("C:/lol/artifacts.html", 'w', encoding='utf-8') as f:
         f.write(content)
@@ -164,9 +189,19 @@ def main():
     content += "<h2>Geografi & Dimensioner</h2>"
     for loc in data['locations']:
         content += f"<div class='wiki-entry'><h3>{loc['name']}</h3><p>{loc['description']}</p></div>"
+        search_entries.append({
+            'title': loc['name'],
+            'url': 'locations.html',
+            'type': 'Plats',
+            'tags': []
+        })
     content += generate_footer()
     with open("C:/lol/locations.html", 'w', encoding='utf-8') as f:
         f.write(content)
+
+    # Save search data
+    with open("C:/lol/search_data.js", 'w', encoding='utf-8') as f:
+        f.write(f"const searchData = {json.dumps(search_entries, ensure_ascii=False)};")
 
 if __name__ == "__main__":
     main()

@@ -95,17 +95,62 @@ a:hover {
     box-shadow: 4px 4px 0px #000;
 }
 
-/* Specific styling for full chapter text */
+/* Specific styling for full chapter text - More readable font */
 .chapter-text {
     white-space: pre-wrap;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.1em;
-    color: #dcdcdc;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Readable serif font */
+    font-size: 1.2em;
+    color: #f0f0f0;
     background-color: #121212;
-    padding: 15px;
+    padding: 30px;
     border: 2px solid #333;
     line-height: 1.8;
-    overflow-x: auto; /* Handle long words/lines on small screens */
+    overflow-x: auto;
+}
+
+/* Search UI */
+.search-container {
+    padding: 10px;
+    background-color: #222;
+    text-align: center;
+}
+
+#search-input {
+    background-color: #000;
+    color: #ffcc00;
+    border: 2px solid #444;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 250px;
+    max-width: 80%;
+}
+
+#search-results {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border: 2px solid #ffcc00;
+    width: 300px;
+    max-width: 90%;
+    z-index: 2000;
+    display: none;
+    text-align: left;
+    box-shadow: 10px 10px 0px #000;
+}
+
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.search-result-item a {
+    text-decoration: none;
+    display: block;
+}
+
+.search-result-item:hover {
+    background-color: #444;
 }
 
 footer {
