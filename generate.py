@@ -62,6 +62,12 @@ def main():
                 content += f"<li>{trait}</li>"
             content += "</ul>"
             
+        if char.get('appearances'):
+            content += "<h3>Förekommer i kapitel</h3><ul>"
+            for app in char['appearances']:
+                content += f"<li>{app}</li>"
+            content += "</ul>"
+            
         if char.get('associations'):
             content += "<h3>Kopplingar</h3><p>"
             content += ", ".join(char['associations'])
