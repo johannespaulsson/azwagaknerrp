@@ -1,6 +1,11 @@
 import json
 import os
 import random
+import re
+
+def natural_sort_key(s):
+    return [int(text) if text.isdigit() else text.lower()
+            for text in re.split('([0-9]+)', s)]
 
 def load_data():
     with open('C:/lol/data.json', 'r', encoding='utf-8') as f:
@@ -77,7 +82,7 @@ def main():
 
     # Generate Chapter pages
     extracted_dir = 'C:/lol/extracted'
-    files = sorted([f for f in os.listdir(extracted_dir) if f.endswith('.txt')])
+    files = sorted([f for f in os.listdir(extracted_dir) if f.endswith('.txt')], key=natural_sort_key)
     
     chapter_list = []
     for filename in files:
