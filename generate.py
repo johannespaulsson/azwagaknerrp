@@ -130,8 +130,15 @@ def main():
         
         if char.get('analysis'):
             content += f"<h3>Djuplodande Analys</h3><div class='wiki-entry'><p>{char['analysis']}</p></div>"
-        
+
+        if char.get('appearances'):
+            content += "<h3>Medverkar i följande kapitel</h3><ul class='wiki-entry'>"
+            for appearance in char['appearances']:
+                content += f"<li>{appearance}</li>"
+            content += "</ul>"
+
         if char.get('traits'):
+
             content += "<h3>Kännetecken</h3><ul>"
             for trait in char['traits']:
                 content += f"<li>{trait}</li>"
@@ -153,12 +160,6 @@ def main():
             content += "<h3>Kända Citat</h3><ul>"
             for quote in char['quotes']:
                 content += f"<li><em>\"{quote}\"</em></li>"
-            content += "</ul>"
-            
-        if char.get('appearances'):
-            content += "<h3>Förekommer i kapitel</h3><ul>"
-            for app in char['appearances']:
-                content += f"<li>{app}</li>"
             content += "</ul>"
             
         if char.get('associations'):
