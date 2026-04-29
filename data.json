@@ -96,12 +96,40 @@
     {
       "id": "ralf_egil",
       "name": "Ralf-Egil Simonsork",
-      "aliases": ["Assistenten"],
+      "aliases": ["Assistenten", "Ralf-Birgit", "Protege"],
       "type": "major",
-      "description": "Stig-Cindys underkonstapel och assitent. Ofta hungrig på fladdermöss eller människokött.",
-      "analysis": "Ralf-Egil hittade vittnet Tetra (en brödrost) och försöker navigera i Stig-Cindys alltmer kaotiska utredningar.",
-      "traits": ["Äter fladdermöss", "Putsar glasögon med påslakan", "Hittade vittnet Tetra"],
-      "associations": ["Stig-Cindy", "Tetra"]
+      "description": "Stig-Cindys underkonstapel och assistent vid Undulatköpings poliskår. En nyutexaminerad polis med en förkärlek för fläskfilé, yoga och personlig hygien baserad på olivolja.",
+      "analysis": "Ralf-Egil är en studie i surrealistisk asketism och polisiär inkompetens. Trots sin status som nyutexaminerad (från Polishögskolan med praktik i Bottnaryd) navigerar han brottsplatser med en kebabrulle i högsta hugg. Hans hem på Sfinxgatan är en helgedom för hyacinter och mammutbetar. Han är oumbärlig för utredningarna, inte för sin skarpsinnighet, utan för att han lyckas snubbla över nyckelvittnen som brödrosten Tetra. Hans hälsa är ett mysterium; han har enligt Doktor Kebab marmelad i kranskärlen och lider av periodiska explosioner av näsblod som kräver rörtång av städerskan.",
+      "traits": [
+        "Vilar fötterna i uppvärmd olivolja",
+        "Virar in nötter, lingon och uppstoppade svalor i håret",
+        "Sover på madrasserade golv för optimal rullning",
+        "Kan somna i avancerade yoga-positioner",
+        "Har marmelad i kranskärlen",
+        "Hypnotiserar varaner på fritiden",
+        "Putsar glasögon med påslakan"
+      ],
+      "possessions": [
+        "Sibirisk läderbälte med fack för hallonlavemang och kebab",
+        "Telefon handgjord i eternitlera formad som en svan",
+        "Rullskridskor hängande från midjeväskan",
+        "Mammutbetar från Katalonien",
+        "Teleskop och en ständig tillgång till kakor"
+      ],
+      "associations": [
+        "Stig-Cindy (chef/överordnad)",
+        "Tetra (huvudvittne/brödrost)",
+        "Doktor Kebab (vill använda hans kranskärl)",
+        "Karl-Ulla (städerska/allierad)",
+        "Örjan Ortega Salivaro (obducent/vän)"
+      ],
+      "quotes": [
+        "I am a flesh machine",
+        "Att kunna mumsa, att kunna sjunga, det är livet för en polis som jag",
+        "Jag har suttit på vakt, men nu verkar det ha hänt grejer, och jag sov inte, jag vilade bara knäna",
+        "Stopp! Det är något i mackan!",
+        "Vart i hela världen är vi?"
+      ]
     },
     {
       "id": "doktor_kebab",
